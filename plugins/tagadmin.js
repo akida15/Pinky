@@ -12,7 +12,7 @@ const Lang = Language.getString('tagall');
 
 if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
 if (Config.WORKTYPE == 'private') {
-    MyPnky.addCommand({pattern: 'tagadmin$', fromMe: true, desc: Lang.TAGADMİN}, (async (message, match) => {
+    MyPnky.addCommand({pattern: 'منشن$', fromMe: true, desc: Lang.TAGADMİN}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';
